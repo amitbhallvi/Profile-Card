@@ -5,8 +5,10 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #dababa3f;
-    color: #333333;
+    background: #1e130c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .container{
     height:100vh;
@@ -24,14 +26,18 @@ body{
     flex-direction: column;
     align-items: center;  
     border: 0.1px solid black;
- 
 }
+
+
 .card img{
     height: 220px;
     width: 150px;
     border-radius: 200px;
     /* margin-top: px;     */
+
 }
+
+
 .card p{
     font-size: 13px;
     text-align: center;
@@ -45,7 +51,22 @@ body{
     text-align: center;
     border: 0.1px solid black;
     padding: 5px;
+    
 }
+.card h4 a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Icon color */
+    /* margin: 5px;
+    transition: transform 0.3s ease;  */
+}
+.card h4:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.267);
+  transition: background-color 0.3s ease-in-out;
+    transform: scale(1.1); 
+
+}
+
 span{
     color: rgb(219, 20, 20);
 }
@@ -53,11 +74,39 @@ span1{
     color: rgb(219, 20, 20);
 }
 .icon{
+  
     margin-top: 8px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
+    /* background-color: red; */
     align-items: center;
-    width: 100px;
+    width: 300px;
     
     /* height:0px; */
+}
+
+.icon a {
+  
+    display: inline-block;
+    /* background-color: black; WhatsApp green color */
+    border-radius: 50%; /* Makes the background circular */
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Icon color */
+    margin: 5px; /* Adds spacing between icons */
+    transition: transform 0.3s ease; /* Adds hover effect */
+}
+
+.icon a:hover {
+  cursor: pointer;
+  /* background-color: red; */
+  transition: background-color 0.3s ease-in-out;
+    transform: scale(1.5); 
+
+}
+
+.icon i {
+    font-size: 20px; /* Adjust icon size as needed */
 }
