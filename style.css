@@ -19,7 +19,7 @@ background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, F
 }
 .card{
     background-color: rgba(0, 255, 255, 0.404);
-    height: 420px;
+    height: 450px;
     width: 300px;
     display: flex;
     justify-content: center; 
